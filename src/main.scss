@@ -1,1 +1,13 @@
-@import "~bootstrap/scss/bootstrap";
+@import "custom.scss";
+
+body {
+    background-image: url("images/potential_background_7-modified.jpeg");
+    background-size: cover;
+}
+
+.box {
+    border: transparent 1px solid;
+    border-radius: 10px;
+}
+
+

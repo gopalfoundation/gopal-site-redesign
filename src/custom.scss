@@ -7,9 +7,17 @@ $primary: $site-theme;
 @import "~bootstrap/scss/_functions";
 @import "~bootstrap/scss/_variables";
 @import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_utilities";
 
 // Add custom colors here and add them to custom-theme-colors
-$altlight: #f2f2f2;
+// $altlight: #F2F2F2;
+// $altlight: #FAFAD2;
+// $altlight: #FFEAB8;
+// $altlight: #FCEDDA;
+// $altlight: #FCF6F5FF;
+// $altlight: #F0EAD4;
+// $altlight: #FFFEEB;
+$altlight: #FFF7E8;
 
 $custom-theme-colors: (
     "altlight": $altlight
@@ -21,13 +29,35 @@ $utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
 $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "width": map-merge(
+//       map-get($utilities, "rounded"),
+//       (
+//         values: map-merge(
+//           map-get(map-get($utilities, "rounded"), "values"),
+//           (4: 0.35rem, 5: 0.4rem),
+//         ),
+//       ),
+//     ),
+//   )
+// );
+
 
 // Customize body variables
 $body-color: $primary;
-$body-bg: $altlight;
+
+// Customize text variables
 $font-family-sans-serif: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
+// Customize blockquote variables
+$blockquote-font-size: $font-size-base * 2.5;
+$blockquote-footer-color: $primary;
+$blockquote-footer-font-size: $small-font-size * 1.5;
+
 // Customize navbar variables
+$navbar-padding-x: $spacer * 10;
 $navbar-light-color: $primary;
 $navbar-light-hover-color: darken($navbar-light-color, 10%);
 
@@ -36,15 +66,17 @@ $navbar-light-brand-hover-color: darken($navbar-light-brand-color, 20%);
 
 $navbar-light-toggler-border-color: $primary;
 
-// Customize input variables
 
+// Customize button variables
+$btn-font-size-sm: 0.95rem;
+
+// Customize input variables
 $input-border-color: $primary;
 $input-bg: transparent;
 $input-group-addon-color: $primary;
 $input-group-addon-bg: transparent;
 $input-group-addon-border-color: $primary;
 
-$navbar-padding-x: $spacer * 10;
 
 // Import original Bootstrap SCSS file.
 @import "~bootstrap/scss/bootstrap";

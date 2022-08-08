@@ -1,13 +1,33 @@
 @import "custom.scss";
 
+$box-border-radius: 15px;
+
 body {
-    background-image: url("images/potential_background_7-modified.jpeg");
+    background-image: url("images/potential_background_7-modified5-compressed.jpeg");
     background-size: cover;
+    background-color: $altlight;
 }
 
 .box {
-    border: transparent 1px solid;
-    border-radius: 10px;
+    border-radius: $box-border-radius;
+} 
+
+.test-box {
+    @extend .box;
+    border: $primary $border-width solid;
 }
 
+.quote-box {
+    @extend .box;
+    border: $primary $border-width solid; 
+    background-color: transparent;
+}
 
+.white-bg {
+    background-color: white;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

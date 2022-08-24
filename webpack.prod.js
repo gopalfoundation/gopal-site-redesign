@@ -67,7 +67,77 @@ module.exports = merge(common, {
                     collapseWhitespace: true,
                     removeComments: true
                 }
-            })
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'what-we-do.html',
+                template: './src/what-we-do.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'raghav-cultural-school.html',
+                template: './src/raghav-cultural-school.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'gyan-sindhu.html',
+                template: './src/gyan-sindhu.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'rcs-registration.html',
+                template: './src/rcs-registration.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'satsang.html',
+                template: './src/satsang.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'books.html',
+                template: './src/books.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'puja.html',
+                template: './src/puja.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            })            
         ]
     }    
 });

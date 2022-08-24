@@ -17,17 +17,18 @@ body {
     border: $primary $border-width solid;
 }
 
+.main-box {
+    @extend .test-box;
+}
+
 .quote-box {
     @extend .box;
     border: $primary $border-width solid; 
     background-color: transparent;
 }
 
-.white-bg {
-    background-color: white;
-}
-
 hr {
     margin-top: 0px;
+    // margin-top: 20px;
     margin-bottom: 0px;
 }

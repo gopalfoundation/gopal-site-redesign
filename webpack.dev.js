@@ -14,6 +14,41 @@ module.exports = merge(common, {
             template: './src/index.html',
             inject: 'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'what-we-do.html',
+            template: './src/what-we-do.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'raghav-cultural-school.html',
+            template: './src/raghav-cultural-school.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'gyan-sindhu.html',
+            template: './src/gyan-sindhu.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'rcs-registration.html',
+            template: './src/rcs-registration.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'satsang.html',
+            template: './src/satsang.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'books.html',
+            template: './src/books.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'puja.html',
+            template: './src/puja.html',
+            inject: 'body'
+        })
     ],
     module: {
         rules: [
@@ -43,7 +78,8 @@ module.exports = merge(common, {
                   }, {
                     // compiles Sass to CSS
                     loader: 'sass-loader'
-                  }]
+                  }
+                ]
             }
         ]
     }

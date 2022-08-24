@@ -47,6 +47,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 // Customize body variables
 $body-color: $primary;
+$font-size-base: 1.03rem;
 
 // Customize text variables
 $font-family-sans-serif: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -76,6 +77,10 @@ $input-bg: transparent;
 $input-group-addon-color: $primary;
 $input-group-addon-bg: transparent;
 $input-group-addon-border-color: $primary;
+
+// Customize select variables
+$form-select-bg: transparent;
+$form-select-border-color: $primary;
 
 
 // Import original Bootstrap SCSS file.

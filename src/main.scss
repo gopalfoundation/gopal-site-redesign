@@ -1,6 +1,8 @@
 @import "custom.scss";
 
 $box-border-radius: 15px;
+$books-img-top-border-radius: $box-border-radius - 1;
+$books-sm-header-top-border-radius: $box-border-radius - 1;
 
 body {
     background-image: url("images/potential_background_7-modified5-compressed.jpeg");
@@ -16,6 +18,20 @@ body {
     @extend .box;
     border: $primary $border-width solid;
 }
+
+.books-img {
+    border-top-left-radius: $books-img-top-border-radius;
+    border-top-right-radius: $books-img-top-border-radius;
+    // background-color: $primary;
+    // color: $altlight;
+}
+
+.books-sm-header {
+    border-top-left-radius: $books-sm-header-top-border-radius;
+    border-top-right-radius: $books-sm-header-top-border-radius;
+    background-color: $primary;
+    color: $altlight;
+} 
 
 .main-box {
     @extend .test-box;

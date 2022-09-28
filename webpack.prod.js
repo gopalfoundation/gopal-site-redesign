@@ -60,7 +60,8 @@ module.exports = merge(common, {
             new CssMinimizerPlugin(),
             new TerserPlugin(), 
             new HtmlWebpackPlugin({
-                template: './src/index.html',
+                filename: 'books-order-confirmation.html',
+                template: './src/books-order-confirmation.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -69,8 +70,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'what-we-do.html',
-                template: './src/what-we-do.html',
+                filename: 'books.html',
+                template: './src/books.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -79,8 +80,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'raghav-cultural-school.html',
-                template: './src/raghav-cultural-school.html',
+                filename: 'donate.html',
+                template: './src/donate.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -91,6 +92,35 @@ module.exports = merge(common, {
             new HtmlWebpackPlugin({
                 filename: 'gyan-sindhu.html',
                 template: './src/gyan-sindhu.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                template: './src/index.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'puja.html',
+                template: './src/puja.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
+                filename: 'raghav-cultural-school.html',
+                template: './src/raghav-cultural-school.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -119,8 +149,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'books.html',
-                template: './src/books.html',
+                filename: 'what-we-do.html',
+                template: './src/what-we-do.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -129,15 +159,15 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'puja.html',
-                template: './src/puja.html',
+                filename: 'who-we-are.html',
+                template: './src/who-we-are.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
                     collapseWhitespace: true,
                     removeComments: true
                 }
-            })            
+            })          
         ]
     }    
 });

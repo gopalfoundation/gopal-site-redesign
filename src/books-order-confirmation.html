@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="p-0 m-0">
+    <div class="px-0 py-4">
+        <header>
+            <nav class="navbar navbar-light bg-transparent navbar-expand-lg mb-4">
+                <div class="container-fluid d-flex justify-content-center">
+                    <a href="index.html" class="navbar-brand m-0">
+                        <img src="images/BestGOPALTransparent.png" alt="" width="200">
+                    </a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center mt-3 mt-lg-0" id="navbarCollapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item px-0 d-flex justify-content-center">
+                                <a href="#" class="nav-link">
+                                    <button type="button" class="btn btn-outline-primary btn-sm mx-lg-2 mx-xxl-5 px-4 py-3 box">
+                                        Home
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item px-0 d-flex justify-content-center">
+                                <a href="#" class="nav-link">
+                                    <button type="button" class="btn btn-outline-primary btn-sm mx-lg-2 mx-xxl-5 px-4 py-3 box">
+                                        Activities
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item px-0 d-flex justify-content-center">
+                                <a href="#" class="nav-link">
+                                    <button type="button" class="btn btn-outline-primary btn-sm mx-lg-2 mx-xxl-5 px-4 py-3 box">
+                                        Resources
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="nav-item px-0 d-flex justify-content-center">
+                                <a href="#" class="nav-link">
+                                    <button type="button" class="btn btn-outline-primary btn-sm mx-lg-2 mx-xxl-5 px-4 py-3 box">
+                                        Donate
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="container-fluid">
+                            <div>
+                                <h1 class="text-center text-lg-start">Order Confirmation</h1>
+                                <form id="bookOrderConfirm" class="needs-validation mt-3" data-toggle="validator" action="/SelectedBooks" method="POST" novalidate>
+                                    <input type="hidden" class="form-control invisible" id="Batch" name="Batch" value="Level 1 wailtlist August 2022" required> 
+                                    <input type="hidden" class="form-control invisible" id="selectedbooksdata" name="selectedbooksdataname" value="selected_books" required>
+                                    <input type="hidden" class="form-control invisible" id="orderID" name="orderIDname" value="order_id" required>
+                                    <h4 class="text-center text-lg-start">Order Details</h4>
+                                    <label id="lblOrderID">Order ID: 20220922.699.4627231842084</label>
+                                    <!-- <div class="row d-flex justify-content-center justify-content-lg-start">
+                                        <div class="main-box col-12 col-lg-6">
+                                            <div class="d-flex justify-content-center align-items-center pt-3 pb-1">
+                                                <p class="mx-3">मानव-मात्र के कल्याण के लिये (Manav-Matra Ke Kalyan Ke Liye)</p>
+                                                <p class="mx-3">Code</p>
+                                                <p class="mx-3">Language</p>
+                                                <p class="mx-3">Quantity</p>
+                                                <p class="mx-3">Price</p>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-10 col-md-8">
+                                            <div class="main-box">
+                                                <div class="d-flex justify-content-center align-items-center py-">
+                                                    <div class="test-box">
+                                                        <p>Shrimad Bhagavad Mahapuran</p>
+                                                    </div>
+
+                                                    <!-- <p class="test-box ">Shrimad Bhagavad Mahapuran</p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
+                                    
+                                    <!-- <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="table-primary">Book name</th>
+                                                <th scope="col">Book Code</th>
+                                                <th scope="col">Language</th>
+                                                <th scope="col">No of Copies</th>
+                                                <th scope="col">Price</th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Code</td>
+                                                <td>Language</td>
+                                                <td>No. of copies</td>
+                                                <td>Price</td>
+                                            </tr>
+                                        </tbody>
+                                    </table> -->
+                                    
+                                    
+                                    <p class="mt-5">Please enter your details and confirm your order.</p>
+                                    
+                                    <div class="row g-3">
+                                        <div class="col-3">
+                                            <label for="FstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="FstName" placeholder="First Name" name="FirstName" value="" required>
+                                            <div class="invalid-feedback">
+                                                Invalid information.
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="LstName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="LstName" placeholder="Last Name" name="LastName" value="" required>
+                                            <div class="invalid-feedback">
+                                                Invalid information.
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="PhoneNum" class="form-label">Phone Number</label>
+                                            <input type="text" class="form-control" id="PhoneNum" placeholder="Phone Number" name="PhoneNumber" value="" required>
+                                            <div class="invalid-feedback">
+                                                Invalid information.
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="Email" class="form-label">Email-Address</label>
+                                            <input type="email" class="form-control" id="Email" placeholder="Email-Address" name="Email" value="" required>
+                                            <div class="invalid-feedback">
+                                                Invalid information.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+</body>
+</html>

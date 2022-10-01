@@ -70,6 +70,16 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
+                filename: 'books-order-thank-you.html',
+                template: './src/books-order-thank-you.html',
+                inject: 'body',
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            }),
+            new HtmlWebpackPlugin({
                 filename: 'books.html',
                 template: './src/books.html',
                 inject: 'body',

@@ -16,6 +16,11 @@ module.exports = merge(common, {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: 'books-order-thank-you.html',
+            template: './src/books-order-thank-you.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'books.html',
             template: './src/books.html',
             inject: 'body'

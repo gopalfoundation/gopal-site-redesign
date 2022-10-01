@@ -64,7 +64,7 @@
                                     <h4 class="mb-3">Puja Details</h4>
                                     <form  id="pujaRegistration" class="row g-3 needs-validation" novalidate>
                                         <div class="row g-3">
-                                            <div class="col-12">
+                                            <div class="col-12 col-md-6">
                                                 <label for="pujaType" class="form-label">Puja Type *</label>
                                                 <select class="form-select" id="state" name="PujaType" onchange="showDiv(this)" required>
                                                     <option value="">Puja Type...</option>
@@ -89,7 +89,7 @@
                                                 </div>
                                             </div>
                                         
-                                            <div class="col-12" id="other_div" style="display:none;">
+                                            <div class="col-12 d-none" id="other_div">
                                                 <label for="other" class="form-label">Please provide a description of the Puja. * </label>
                                                 <input type="text" class="form-control" id="Other_Des" placeholder="Please provide a description of the Puja." name="OtherPujaDescription" value="" required>
                                                 <div class="invalid-feedback">
@@ -97,7 +97,7 @@
                                                 </div>
                                             </div>
                         
-                                            <div class="col-12">
+                                            <div class="col-12 col-md-6">
                                                 <label for="pujadate" class="form-label">When are you planning to host the puja? * </label>
                                                 <input type="date" class="form-control" id="day" name="puja_date" required>
                                                 <div class="invalid-feedback">
@@ -109,7 +109,7 @@
                 
                                             <h4>Your Details</h4>
                                             <div class="row g-3">
-                                                <div class="col-12">
+                                                <div class="col-12 col-md-6">
                                                     <label for="firstName" class="form-label">First name *</label>
                                                     <input type="text" class="form-control" id="firstName" placeholder="First Name" name="FirstName" value="" required>
                                                     <div class="invalid-feedback">
@@ -117,12 +117,12 @@
                                                     </div>
                                                 </div>
                         
-                                                <div class="col-12">
+                                                <div class="col-12 col-md-6">
                                                     <label for="lastName" class="form-label">Last Name</label>
                                                     <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="LastName" value="">
                                                 </div>
                         
-                                                <div class="col-12">
+                                                <div class="col-12 col-md-6">
                                                     <label for="phoneNum" class="form-label">Phone Number *</label>
                                                     <div class="input-group has-validation">
                                                         <input type="text" class="form-control" id="phoneNum" placeholder="000-111-2222" name="PhoneNumber" required>
@@ -132,7 +132,7 @@
                                                     </div>
                                                 </div>
                         
-                                                <div class="col-12">
+                                                <div class="col-12 col-md-6">
                                                     <label for="email" class="form-label">Email *</label>
                                                     <div class="input-group has-validation">
                                                         <input type="email" class="form-control" id="email" placeholder="you@example.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
@@ -142,27 +142,27 @@
                                                     </div>
                                                 </div>
                         
-                                                <div class="col-12">
+                                                <div class="col-12 col-md-6">
                                                     <label for="address1" class="form-label">Address 1 </label>
                                                     <input type="text" class="form-control" id="address" placeholder="Address 1" name="Address1">
                                                 </div>
                         
-                                                <div class="col-12">
+                                                <div class="col-12 col-md-6">
                                                     <label for="address2" class="form-label">Address 2</span></label><!--<span class="text-muted">(optional)-->
                                                     <input type="text" class="form-control" id="address2" placeholder="Address 2" name="Address2">
                                                 </div>
                 
-                                                <div class="col-6">
+                                                <div class="col-12 col-md-6">
                                                     <label for="city" class="form-label">City </label>
                                                     <input type="text" class="form-control" id="city" placeholder="City" name="City">
                                                 </div>
                         
-                                                <div class="col-6">
+                                                <div class="col-12 col-md-6">
                                                     <label for="state" class="form-label">State</label>
                                                     <input type="text" class="form-control" id="state" placeholder="State" name="State">
                                                 </div>
                 
-                                                <div class="col-6">
+                                                <div class="col-12 col-md-6">
                                                     <label for="zip" class="form-label">Zip Code</label>
                                                     <input type="text" class="form-control" id="zip" placeholder="Zip Code" name="ZipCode">
                                                     <div class="invalid-feedback">
@@ -170,7 +170,7 @@
                                                     </div>
                                                 </div>
                                 
-                                                <div class="col-6">
+                                                <div class="col-12 col-md-6">
                                                     <label for="state" class="form-label">Country</label>
                                                     <input type="text" class="form-control" id="state" name="Country" placeholder="Zip Code" value="USA">
                                                     <div class="invalid-feedback">
@@ -201,7 +201,7 @@
             </div>
         </main>
 
-        <hr>
+        <hr class="mt-4">
 
         <footer class="container-fluid mt-5">
             <div class="row d-flex justify-content-center">

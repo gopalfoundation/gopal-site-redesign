@@ -12,7 +12,7 @@
             <nav class="navbar navbar-light bg-transparent navbar-expand-lg mb-4">
                 <div class="container-fluid d-flex justify-content-center">
                     <a href="index.html" class="navbar-brand m-0">
-                        <img src="images/BestGOPALTransparent.png" alt="" width="200">
+                        <img src="../img/BestGOPALTransparent.png" alt="" width="200">
                     </a>
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -58,140 +58,110 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-10">
                         <div class="container-fluid">
-                            <h6>* = Required</h6>
-                            <div class="row mt-5">
-                                <div class="col-12">
-                                    <h4 class="mb-3">Puja Details</h4>
-                                    <form  id="pujaRegistration" class="row g-3 needs-validation" novalidate>
-                                        <div class="row g-3">
-                                            <div class="col-12 col-md-6">
-                                                <label for="pujaType" class="form-label">Puja Type *</label>
-                                                <select class="form-select" id="state" name="PujaType" onchange="showDiv(this)" required>
-                                                    <option value="">Puja Type...</option>
-                                                    <option id="1">1. Housewarming - Hanumanji Pooja & Sundarkand</option>
-                                                    <option id="2">2. Shri Sundarkand Path</option>
-                                                    <option id="3">3. Bhajan Sandhya</option>
-                                                    <option id="4">4. Akhand Ramayan Path</option>
-                                                    <option id="5">5. Shrimad Ramcharitamanas/Ramayana Katha</option>
-                                                    <option id="6">6. Shrimad Bhagavat Maha Puran Katha</option>
-                                                    <option id="7">7. Shrimad Bhavagad Gita Pravachan</option>
-                                                    <option id="8">8. Shri Satyanarayan Vrat Katha</option>
-                                                    <option id="9">9. Griha Pravesh Puja</option>
-                                                    <option id="10">10. Puja for Newborns</option>
-                                                    <option id="11">11. Garbhadhan Sanskar</option>
-                                                    <option id="12">12. Nam Karan Sanskar</option>
-                                                    <option id="13">13. Puja for Birthdays</option>
-                                                    <option value="13" id="other_option">14. Any other puja not listed above</option>
-                                                </select>
-                                                
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="col-12 d-none" id="other_div">
-                                                <label for="other" class="form-label">Please provide a description of the Puja. * </label>
-                                                <input type="text" class="form-control" id="Other_Des" placeholder="Please provide a description of the Puja." name="OtherPujaDescription" value="" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                        
-                                            <div class="col-12 col-md-6">
-                                                <label for="pujadate" class="form-label">When are you planning to host the puja? * </label>
-                                                <input type="date" class="form-control" id="day" name="puja_date" required>
-                                                <div class="invalid-feedback">
-                                                    This field is required.
-                                                </div>
-                                            </div>
-                
-                                            <hr class="my-4">
-                
-                                            <h4>Your Details</h4>
-                                            <div class="row g-3">
-                                                <div class="col-12 col-md-6">
-                                                    <label for="firstName" class="form-label">First name *</label>
-                                                    <input type="text" class="form-control" id="firstName" placeholder="First Name" name="FirstName" value="" required>
-                                                    <div class="invalid-feedback">
-                                                        This field is required.
-                                                    </div>
-                                                </div>
-                        
-                                                <div class="col-12 col-md-6">
-                                                    <label for="lastName" class="form-label">Last Name</label>
-                                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="LastName" value="">
-                                                </div>
-                        
-                                                <div class="col-12 col-md-6">
-                                                    <label for="phoneNum" class="form-label">Phone Number *</label>
-                                                    <div class="input-group has-validation">
-                                                        <input type="text" class="form-control" id="phoneNum" placeholder="000-111-2222" name="PhoneNumber" required>
-                                                        <div class="invalid-feedback">
-                                                            This field is required.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                        
-                                                <div class="col-12 col-md-6">
-                                                    <label for="email" class="form-label">Email *</label>
-                                                    <div class="input-group has-validation">
-                                                        <input type="email" class="form-control" id="email" placeholder="you@example.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                                                        <div class="invalid-feedback">
-                                                            Please enter a valid email address.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                        
-                                                <div class="col-12 col-md-6">
-                                                    <label for="address1" class="form-label">Address 1 </label>
-                                                    <input type="text" class="form-control" id="address" placeholder="Address 1" name="Address1">
-                                                </div>
-                        
-                                                <div class="col-12 col-md-6">
-                                                    <label for="address2" class="form-label">Address 2</span></label><!--<span class="text-muted">(optional)-->
-                                                    <input type="text" class="form-control" id="address2" placeholder="Address 2" name="Address2">
-                                                </div>
-                
-                                                <div class="col-12 col-md-6">
-                                                    <label for="city" class="form-label">City </label>
-                                                    <input type="text" class="form-control" id="city" placeholder="City" name="City">
-                                                </div>
-                        
-                                                <div class="col-12 col-md-6">
-                                                    <label for="state" class="form-label">State</label>
-                                                    <input type="text" class="form-control" id="state" placeholder="State" name="State">
-                                                </div>
-                
-                                                <div class="col-12 col-md-6">
-                                                    <label for="zip" class="form-label">Zip Code</label>
-                                                    <input type="text" class="form-control" id="zip" placeholder="Zip Code" name="ZipCode">
-                                                    <div class="invalid-feedback">
-                                                        Invalid information.
-                                                    </div>
-                                                </div>
-                                
-                                                <div class="col-12 col-md-6">
-                                                    <label for="state" class="form-label">Country</label>
-                                                    <input type="text" class="form-control" id="state" name="Country" placeholder="Zip Code" value="USA">
-                                                    <div class="invalid-feedback">
-                                                        Invalid information.
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <h1 class="text-center mb-4">Gyan Sindhu</h1>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-12 col-md-10 col-lg-9 d-flex justify-content-center mb-4">
+                                    <img src="https://picsum.photos/1280/720" alt="" class="img-fluid box">
+                                </div>
+                                <div class="col-md-10 col-xl-8 my-2">
+                                    <p class="text-start text-xl-center mb-5">
+                                        Gyan Sindhu programs are based on Vedic teachings which include the Bhagavad Gita, 
+                                        Ramcharitmanas, etc. These programs are open to all and conducted as short courses 
+                                        to introduce as many people as possible to the vast Vedic knowledge.
+                                    </p>
 
+                                    <div class="my-5">
+                                        <h6>* = Required.</h6>
+                                    </div>
+
+                                    <form id="gyansindhu_registration" class="needs-validation" novalidate>
+                                        <div class="row g-3">
+                                            <input type="hidden" class="form-control invisible" id="Batch" name="Batch" value="Level 1 wailtlist August 2022" required> 
+                                            <div class="col-12 col-md-4">
+                                                <label for="FstName" class="form-label">First Name *</label>
+                                                <input type="text" class="form-control" id="FstName" placeholder="First Name" name="FirstName" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Invalid information.
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <label for="LstName" class="form-label">Last Name *</label>
+                                                <input type="text" class="form-control" id="LstName" placeholder="Last Name" name="LastName" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Invalid information.
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <label for="PhoneNum" class="form-label">Phone Number *</label>
+                                                <input type="text" class="form-control" id="PhoneNum" placeholder="Phone #" name="PhoneNumber" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Invalid information.
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="Email" class="form-label">Email-Address *</label>
+                                                <input type="email" class="form-control" id="Email" placeholder="Email-Address" name="Email" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Invalid information.
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <label for="city" class="form-label">City *</label>
+                                                <input type="text" class="form-control" id="city" placeholder="City" name="City">
+                                                <div class="invalid-feedback">
+                                                    Invalid information.
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <label for="state" class="form-label">State *</label>
+                                                <input type="text" class="form-control" id="state" placeholder="State" name="State">
+                                                <div class="invalid-feedback">
+                                                    Invalid information.
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-5">
+                                                <label for="Hobbies" class="form-label">Please choose what interests you *</label></br>
+                                                <div class="form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="check1" name="BhagawatGeetaClass" value="Bhagawat Geeta Class">
+                                                    <label class="form-check-label" for="check1">Bhagwat Geeta Parichay</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="check2" name="seminarClass" value="Seminar and Webinar">
+                                                    <label class="form-check-label" for="check2">Seminars/Webinars</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input type="checkbox" class="form-check-input" id="check2" name="RamcharitManasClass" value="Ramcharit Manas Class">
+                                                    <label class="form-check-label" for="check2">Ramcharit Manas Parichay</label>
+                                                </div>
+                                            
+                                                <div class="invalid-feedback">
+                                                    This field is required.
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-8 mt-4">
+                                                <label for="can_read_hindi" class="form-label">Preferred language?</label>
+                                                <select class="form-select" id="canReadHindi" name="CanReadHindi">
+                                                    <option value="">Choose...</option>
+                                                    <option>Hindi</option>
+                                                    <option>English</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <label for="question" class="mb-2">Questions/Concerns?</label>
+                                                <textarea class="form-control" id="question" placeholder="Questions/Concerns?" rows="3" name="Question"></textarea>
+                                            </div>
                                             <div class="d-flex justify-content-center mt-5">
                                                 <button class="btn btn-outline-primary btn-lg col-6 col-md-3" type="submit">Submit</button>
                                             </div>
-                                    
                                             <div id="myModal" class="modal">
                                                 <div class="modal-content">
                                                     <span class="close" id="close_icon">&times;</span>
-                                                    <h5 style="text-align: center">Thank you! Please check your e-mail for an e-mail confirmation containing Puja Samagri and additional information. Please also check your spam if you don't receive the email.<br></h5>
+                                                    <h5 style="text-align: center">Thank you! Please check your e-mail for an e-mail confirmation. Please also check your spam if you don't find the email in your inbox.<br></h5>
                                                     <h3><br></h3>
                                                     <span id="close_btn" class="w-25 btn btn-primary btn-lg offset-4 col-3">Close</span>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>  
                                     </form>
                                 </div>
                             </div>
@@ -200,7 +170,7 @@
                 </div>
             </div>
         </main>
-
+        
         <hr class="mt-4">
 
         <footer class="container-fluid mt-5">

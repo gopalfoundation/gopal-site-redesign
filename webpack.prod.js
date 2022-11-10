@@ -10,15 +10,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(common, {
     mode: 'production', 
     output: {
-        filename: '[name].[contenthash].bundle.js',
+        filename: 'js/[name].[contenthash].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'images/[name].[hash][ext]'
+        assetModuleFilename: 'img/[name].[hash][ext]'
     }, 
     plugins: [
         new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
-            filename: '[name].[contenthash].css',
+            filename: 'css/[name].[contenthash].css',
+            // filename: '[name].css',
             // chunkFilename: "[id].[contenthash].css",
         }),
         new CleanWebpackPlugin()
@@ -60,8 +61,8 @@ module.exports = merge(common, {
             new CssMinimizerPlugin(),
             new TerserPlugin(), 
             new HtmlWebpackPlugin({
-                filename: 'books-order-confirmation.html',
-                template: './src/books-order-confirmation.html',
+                filename: 'html/books-order-confirmation.html',
+                template: './src/html/books-order-confirmation.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -70,8 +71,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'books-order-thank-you.html',
-                template: './src/books-order-thank-you.html',
+                filename: 'html/books-order-thank-you.html',
+                template: './src/html/books-order-thank-you.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -80,8 +81,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'books.html',
-                template: './src/books.html',
+                filename: 'html/books.html',
+                template: './src/html/books.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -90,8 +91,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'donate.html',
-                template: './src/donate.html',
+                filename: 'html/donate.html',
+                template: './src/html/donate.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -100,8 +101,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'gyan-sindhu.html',
-                template: './src/gyan-sindhu.html',
+                filename: 'html/gyan-sindhu.html',
+                template: './src/html/gyan-sindhu.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -110,7 +111,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                template: './src/index.html',
+                filename: 'html/index.html',
+                template: './src/html/index.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -119,8 +121,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'puja.html',
-                template: './src/puja.html',
+                filename: 'html/puja.html',
+                template: './src/html/puja.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -129,8 +131,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'raghav-cultural-school.html',
-                template: './src/raghav-cultural-school.html',
+                filename: 'html/raghav-cultural-school.html',
+                template: './src/html/raghav-cultural-school.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -139,8 +141,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'rcs-registration.html',
-                template: './src/rcs-registration.html',
+                filename: 'html/rcs-registration.html',
+                template: './src/html/rcs-registration.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -149,8 +151,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'satsang.html',
-                template: './src/satsang.html',
+                filename: 'html/satsang.html',
+                template: './src/html/satsang.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -159,8 +161,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'what-we-do.html',
-                template: './src/what-we-do.html',
+                filename: 'html/what-we-do.html',
+                template: './src/html/what-we-do.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
@@ -169,8 +171,8 @@ module.exports = merge(common, {
                 }
             }),
             new HtmlWebpackPlugin({
-                filename: 'who-we-are.html',
-                template: './src/who-we-are.html',
+                filename: 'html/who-we-are.html',
+                template: './src/html/who-we-are.html',
                 inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,

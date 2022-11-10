@@ -2,8 +2,10 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        main: './src/index.js',
-        vendor: './src/vendor.js' 
+        // this file imports the Bootstrap SCSS and JS, as well as my Bootstrap customizations. 
+        main: './src/js/index.js',
+        // this file imports the SCSS file in which I've created my own, e.g. non-Bootstrap, classes (self.scss)
+        self: './src/js/self.js' 
     },
     module: {
         rules: [

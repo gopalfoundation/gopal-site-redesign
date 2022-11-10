@@ -1,0 +1,6 @@
+// Customize Bootstrap.
+@import 'self-made-variables'; 
+@import 'bootstrap-variables-overrides';
+
+// Import original Bootstrap SCSS file.
+@import '~bootstrap/scss/bootstrap';

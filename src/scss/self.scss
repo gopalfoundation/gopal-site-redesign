@@ -1,11 +1,10 @@
-@import "custom.scss";
+// @import "bootstrap_overrides";
 
-$box-border-radius: 15px;
-$books-img-top-border-radius: $box-border-radius - 1;
-$books-sm-header-top-border-radius: $box-border-radius - 1;
+@import 'bootstrap-variables-overrides';
+@import 'self-made-variables';
 
 body {
-    background-image: url("images/potential_background_7-modified5-compressed.jpeg");
+    background-image: url("../img/potential_background_7-modified5-compressed.jpeg");
     background-size: cover;
     background-color: $altlight;
 }
@@ -14,9 +13,18 @@ body {
     border-radius: $box-border-radius;
 } 
 
-.test-box {
+.main-box {
     @extend .box;
     border: $primary $border-width solid;
+}
+
+.test-box {
+    @extend .main-box;
+}
+
+.quote-box {
+    @extend .main-box;
+    background-color: transparent;
 }
 
 .books-img {
@@ -33,15 +41,6 @@ body {
     color: $altlight;
 } 
 
-.main-box {
-    @extend .test-box;
-}
-
-.quote-box {
-    @extend .box;
-    border: $primary $border-width solid; 
-    background-color: transparent;
-}
 
 hr {
     margin-top: 0px;

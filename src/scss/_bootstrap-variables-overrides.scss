@@ -1,13 +1,11 @@
-// Customize Bootstrap.
+$altlight: #FFF7E8;
 
-// Modify colors in theme-colors
-$site-theme: #990011FF;
-$primary: $site-theme;
+$primary: #990011FF;
 
-@import "~bootstrap/scss/_functions";
-@import "~bootstrap/scss/_variables";
-@import "~bootstrap/scss/_mixins";
-@import "~bootstrap/scss/_utilities";
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/_mixins';
+@import '~bootstrap/scss/_utilities';
 
 // Add custom colors here and add them to custom-theme-colors
 // $altlight: #F2F2F2;
@@ -17,7 +15,6 @@ $primary: $site-theme;
 // $altlight: #FCF6F5FF;
 // $altlight: #F0EAD4;
 // $altlight: #FFFEEB;
-$altlight: #FFF7E8;
 
 $custom-theme-colors: (
     "altlight": $altlight
@@ -85,7 +82,3 @@ $form-select-border-color: $primary;
 // $form-check-input-width: 0.8em;
 // $form-check-input-bg: $input-bg;
 $form-check-input-border: 1px solid $primary;
-
-
-// Import original Bootstrap SCSS file.
-@import "~bootstrap/scss/bootstrap";

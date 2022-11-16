@@ -10,16 +10,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(common, {
     mode: 'production', 
     output: {
-        filename: 'js/[name].[contenthash].bundle.js',
+        // filename: 'js/[name].[contenthash].bundle.js',
+        filename: 'js/[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'img/[name].[hash][ext]'
+        // assetModuleFilename: 'img/[name].[hash][ext]'
+        assetModuleFilename: 'img/[name][ext]'
     }, 
     plugins: [
         new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
-            filename: 'css/[name].[contenthash].css',
-            // filename: '[name].css',
+            // filename: 'css/[name].[contenthash].css',
+            filename: 'css/[name].css',
             // chunkFilename: "[id].[contenthash].css",
         }),
         new CleanWebpackPlugin()

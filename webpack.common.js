@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -7,11 +8,92 @@ module.exports = {
         // this file imports the SCSS file in which I've created my own, e.g. non-Bootstrap, classes (self.scss)
         self: './src/js/self.js' 
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: 'html/books-order-confirmation.html',
+            template: './src/html/books-order-confirmation.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/books-order-thank-you.html',
+            template: './src/html/books-order-thank-you.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/books.html',
+            template: './src/html/books.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/donate.html',
+            template: './src/html/donate.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/gyan-sindhu.html',
+            template: './src/html/gyan-sindhu.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/index.html',
+            template: './src/html/index.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/puja.html',
+            template: './src/html/puja.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/raghav-cultural-school.html',
+            template: './src/html/raghav-cultural-school.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/rcs-registration.html',
+            template: './src/html/rcs-registration.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/satsang.html',
+            template: './src/html/satsang.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/what-we-do.html',
+            template: './src/html/what-we-do.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/who-we-are.html',
+            template: './src/html/who-we-are.html',
+            inject: 'body',
+            minify: false
+        })
+    ],
     module: {
         rules: [
             {
                 test: /\.html$/,
-                use: ['html-loader']
+                use: [
+                    {
+                        loader: 'html-loader',
+                        options: {
+                             minimize: false
+                        }
+                    }
+                ]
             },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,

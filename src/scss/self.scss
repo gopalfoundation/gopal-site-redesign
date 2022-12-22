@@ -4,8 +4,13 @@
 @import 'self-made-variables';
 
 body {
-    background-image: url("../img/potential_background_7-modified5-compressed.jpeg");
-    background-size: cover;
+    // background-image: url("../img/potential_background_7-modified5-compressed.jpeg");
+    // background-size: cover;
+    
+    // background-image: url("../img/Somerset+Strie+Striped+Wallpaper+Roll.jpg");
+    background-image: url("../img/Rosemore+Damask+Wallpaper.jpg");
+    background-repeat: repeat;
+
     background-color: $altlight;
 }
 
@@ -39,8 +44,13 @@ body {
     border-top-right-radius: $books-sm-header-top-border-radius;
     background-color: $primary;
     color: $altlight;
+    width: 275px;
 } 
 
+.books-md-name {
+    width: 245px;
+    height: 8rem;
+}
 
 hr {
     margin-top: 0px;

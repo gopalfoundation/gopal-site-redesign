@@ -1,4 +1,7 @@
-$altlight: #FFF7E8;
+// needed to define `$altlight` (which is a self-made variable)
+// in _bootstrap-variable-overrides in order to add `altlight`
+// to Bootstrap's theme-colors map
+$altlight: #fdfef6;
 
 $primary: #990011FF;
 
@@ -15,6 +18,8 @@ $primary: #990011FF;
 // $altlight: #FCF6F5FF;
 // $altlight: #F0EAD4;
 // $altlight: #FFFEEB;
+// $altlight: #FFF7E8;
+// $altlight: #fcfbf1;
 
 $custom-theme-colors: (
     "altlight": $altlight

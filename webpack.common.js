@@ -34,6 +34,12 @@ module.exports = {
             minify: false
         }),
         new HtmlWebpackPlugin({
+            filename: 'html/gyan-sindhu-course-registration.html',
+            template: './src/html/gyan-sindhu-course-registration.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
             filename: 'html/gyan-sindhu.html',
             template: './src/html/gyan-sindhu.html',
             inject: 'body',
@@ -42,6 +48,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'html/index.html',
             template: './src/html/index.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/privacy-policy.html',
+            template: './src/html/privacy-policy.html',
             inject: 'body',
             minify: false
         }),
@@ -64,8 +76,14 @@ module.exports = {
             minify: false
         }),
         new HtmlWebpackPlugin({
-            filename: 'html/satsang.html',
-            template: './src/html/satsang.html',
+            filename: 'html/store.html',
+            template: './src/html/store.html',
+            inject: 'body',
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'html/terms-and-conditions.html',
+            template: './src/html/terms-and-conditions.html',
             inject: 'body',
             minify: false
         }),

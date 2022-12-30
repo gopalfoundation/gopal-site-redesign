@@ -84,6 +84,21 @@ $input-group-addon-border-color: $primary;
 $form-select-bg: transparent;
 $form-select-border-color: $primary;
 
+// Customize checkbox variables
 // $form-check-input-width: 0.8em;
 // $form-check-input-bg: $input-bg;
 $form-check-input-border: 1px solid $primary;
+
+// // New styles to change input color to green as requested by JVK
+// $form-check-input-checked-color: $green;
+// $form-check-input-checked-bg-color: $green;
+// $form-check-input-checked-border-color: $green;
+// $form-check-input-focus-box-shadow: $green;
+// $form-check-input-focus-border: $green;
+
+// Customize modal variables
+$modal-content-color: $primary;
+$modal-content-bg: $altlight;
+$modal-content-border-color: $primary;
+$modal-content-border-radius: 15px;
+$modal-content-border-width: 5px;

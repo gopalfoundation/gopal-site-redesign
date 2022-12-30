@@ -34,14 +34,14 @@ module.exports = {
             minify: false
         }),
         new HtmlWebpackPlugin({
-            filename: 'html/gyan-sindhu-course-registration.html',
-            template: './src/html/gyan-sindhu-course-registration.html',
+            filename: 'html/prem-sindhu-course-registration.html',
+            template: './src/html/prem-sindhu-course-registration.html',
             inject: 'body',
             minify: false
         }),
         new HtmlWebpackPlugin({
-            filename: 'html/gyan-sindhu.html',
-            template: './src/html/gyan-sindhu.html',
+            filename: 'html/prem-sindhu.html',
+            template: './src/html/prem-sindhu.html',
             inject: 'body',
             minify: false
         }),

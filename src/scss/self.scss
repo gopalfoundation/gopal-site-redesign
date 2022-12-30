@@ -3,14 +3,9 @@
 @import 'bootstrap-variables-overrides';
 @import 'self-made-variables';
 
-body {
-    // background-image: url("../img/potential_background_7-modified5-compressed.jpeg");
-    // background-size: cover;
-    
-    // background-image: url("../img/Somerset+Strie+Striped+Wallpaper+Roll.jpg");
-    background-image: url("../img/Rosemore+Damask+Wallpaper.jpg");
+body {    
+    background-image: url("../img/peach_background.jpg");
     background-repeat: repeat;
-
     background-color: $altlight;
 }
 
@@ -35,8 +30,6 @@ body {
 .books-img {
     border-top-left-radius: $books-img-top-border-radius;
     border-top-right-radius: $books-img-top-border-radius;
-    // background-color: $primary;
-    // color: $altlight;
 }
 
 .books-sm-header {
@@ -54,6 +47,5 @@ body {
 
 hr {
     margin-top: 0px;
-    // margin-top: 20px;
     margin-bottom: 0px;
 }

@@ -4,7 +4,7 @@ This project is for overhauling the current design/UI of https://gloryofpeaceand
 
 I have used Webpack to automate development processes and manage my assets easily. 
 
-Note: I've simply redesigned the pages that will most likely be used. Once these pages are shipped off to production, I don't anticipate any need to come back to this repository later. After the redesigned website goes live, things like adding new pages and modifying the content of the website will take place in the production environment (much of the content is dynamic, e.g. it comes from databases, and so it isn't feasible to keep modifying the site locally once it goes live in the production environment). 
+Note: I've simply redesigned the pages that will most likely be used. Once these pages are shipped off to production, I don't anticipate any need to come back to this repository later unless an important design change is needed. After the redesigned website goes live, things like adding new pages and modifying the content of the website will take place in the production environment (much of the content is dynamic, e.g. it comes from databases, and so it isn't feasible to keep modifying the site locally once it goes live in the production environment). 
 
 # Usage
 

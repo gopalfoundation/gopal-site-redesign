@@ -18,6 +18,3 @@ Steps to clone project to your own computer:
 3. `npm install` (This will install all the dependencies needed to build the website).
 
 If you want to view the site in development mode, run `npm run dev` in your terminal. Otherwise, to build the website using Webpack, run `npm run prod` instead. If you wish to change the names of these scripts, you can do so in `package.json` by editing the `scripts` object (e.g. if you want the development mode script to be `npm run start` instead of `npm run dev` as it currently is, replace `"dev"` with `"start"`). 
-
-# Explanation of project
-

@@ -75,6 +75,7 @@ $btn-font-size-sm: 0.95rem;
 
 // Customize input variables
 $input-border-color: $primary;
+$input-color: $primary;
 $input-bg: transparent;
 $input-group-addon-color: $primary;
 $input-group-addon-bg: transparent;
@@ -102,3 +103,8 @@ $modal-content-bg: $white;
 $modal-content-border-color: $primary;
 $modal-content-border-radius: 15px;
 $modal-content-border-width: 5px;
+
+// Customize file input variables
+$form-file-button-color:          $altlight;
+$form-file-button-bg:             $primary;
+$form-file-button-hover-bg:       shade-color($form-file-button-bg, 10%);
